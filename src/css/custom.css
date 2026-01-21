@@ -1,0 +1,95 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.progress-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-left: 0.5rem; /* Space from the sidebar label */
+  flex-basis: 20px;
+  flex-shrink: 0;
+  background-color: transparent; /* Default transparent */
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: 4px 5px;
+}
+
+.progress-indicator-completed {
+  background-color: rgb(62 163 79); /* Green */
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00488 0.504883C9.27825 0.231516 9.72175 0.231516 9.99512 0.504883C10.2685 0.77825 10.2685 1.22175 9.99512 1.49512L4.49512 6.99512C4.22175 7.26848 3.77825 7.26848 3.50488 6.99512L0.504883 3.99512C0.231516 3.72175 0.231516 3.27825 0.504883 3.00488C0.77825 2.73152 1.22175 2.73152 1.49512 3.00488L4 5.50977L9.00488 0.504883Z' fill='white' stroke='white' stroke-width='0.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* Ensure sidebar items flex properly */
+.theme-doc-sidebar-item-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbarSearchContainer_Bca1 .aa-Input {
+  width: 300px !important;
+  min-height: 40px !important;
+  font-size: 16px !important;
+  padding: 10px 12px !important;
+}
+
+.aa-DetachedSearchButton {
+  padding: 8px 12px !important;
+  font-size: 16px !important;
+  max-height: 35px !important;
+  min-width: 200px !important; 
+  border-radius: 4px !important;
+  background-color: #f8f9fa !important;
+  border: 1px solid #ddd !important;
+  color: #6c757d !important;
+  transition: all 0.2s ease !important;
+}
+
+@media screen and (max-width: 996px) {
+  .aa-DetachedSearchButton {
+    min-width: 150px !important;
+  }
+}
+
+.aa-DetachedSearchButton:hover {
+  background-color: #e9ecef !important;
+  border-color: #adb5bd !important;
+  color: #495057 !important;
+}
+
+.aa-DetachedSearchButtonIcon {
+  width: calc(20px + 16px) !important;
+  height: 100% !important;
+}
+
+.aa-SubmitIcon {
+  color: #366f87;
+}
