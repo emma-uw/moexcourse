@@ -3,13 +3,12 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'MOEXAlgo',
+  title: 'MOEX Algo',
   favicon: 'img/favicon.png',
-
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
-  organizationName: 'facebook', 
-  projectName: 'docusaurus', 
+  url: "https://emma-uw.github.io",
+  baseUrl: "/moexcourse/",
+  organizationName: "emma-uw", 
+  projectName: "moexcourse",
   onBrokenLinks: 'throw',
 
   i18n: {
