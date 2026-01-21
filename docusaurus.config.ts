@@ -25,9 +25,9 @@ const config: Config = {
           editUrl: ({docPath}) => {
             if (docPath.startsWith('examples/')) {
               const notebookPath = docPath.replace('.mdx', '.ipynb').replace('docs/', '');
-              return `https://github.com/moexalgo/moexalgo.github.io/edit/main/${notebookPath}`;
+              return `https://github.com/emma-uw/moexcourse/edit/main/${notebookPath}`;
             }
-            return `https://github.com/moexalgo/moexalgo.github.io/edit/main/docs/${docPath}`;
+            return `https://github.com/emma-uw/moexcourse/edit/main/docs/${docPath}`;
           },
         },
         blog: {
@@ -76,7 +76,7 @@ const config: Config = {
           position: 'right', 
         },
         {
-          href: 'https://github.com/moexalgo/moexalgo',
+          href: 'https://github.com/emma-uw/moexcourse',
           label: 'GitHub',
           position: 'right',
         },
